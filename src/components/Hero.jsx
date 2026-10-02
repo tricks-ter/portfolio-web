@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Terminal, Database, Code2 } from 'lucide-react';
+import { Mail, Terminal, Database, Code2, FileText } from 'lucide-react';
 import Logo from './Logo';
 
 const GithubIcon = () => (
@@ -93,6 +93,16 @@ export default function Hero() {
           >
             <Mail size={20} />
             Let's Collaborate
+          </motion.a>
+          <motion.a
+            whileHover={{ scale: 1.05, boxShadow: "0 0 20px rgba(139, 92, 246, 0.4)" }}
+            whileTap={{ scale: 0.95 }}
+            href="/resume/index.html"
+            target="_blank"
+            className="flex items-center gap-2 bg-purple-600 text-white px-8 py-4 rounded-full hover:bg-purple-700 transition-all font-medium"
+          >
+            <FileText size={20} />
+            View Resume
           </motion.a>
         </motion.div>
       </motion.div>

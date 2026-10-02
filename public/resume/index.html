@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rasel Ahmmed - Resume</title>
+    <style>
+        :root {
+            --primary: #1e1b4b; /* Deep Indigo */
+            --secondary: #4f46e5; /* Indigo 600 */
+            --text-main: #334155;
+            --text-muted: #64748b;
+            --bg: #ffffff;
+            --accent: #e0e7ff;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            color: var(--text-main);
+            background: #f1f5f9;
+            line-height: 1.5;
+            font-size: 14px;
+        }
+
+        .resume-container {
+            max-width: 850px;
+            margin: 40px auto;
+            background: var(--bg);
+            padding: 50px 60px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            border-radius: 8px;
+        }
+
+        /* Print Settings */
+        @media print {
+            body { background: white; margin: 0; }
+            .resume-container { 
+                margin: 0; 
+                padding: 10px 20px; 
+                box-shadow: none; 
+                border-radius: 0;
+                max-width: 100%;
+            }
+            .hide-print { display: none !important; }
+        }
+
+        header {
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .profile-img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--secondary);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .header-left h1 {
+            font-size: 32px;
+            color: var(--primary);
+            letter-spacing: -0.5px;
+            margin-bottom: 2px;
+        }
+
+        .header-left h2 {
+            font-size: 16px;
+            color: var(--secondary);
+            font-weight: 500;
+        }
+
+        .header-right {
+            text-align: right;
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        .header-right a {
+            color: var(--text-muted);
+            text-decoration: none;
+        }
+
+        .header-right a:hover { color: var(--secondary); }
+
+        .section { margin-bottom: 20px; }
+        
+        .section-title {
+            font-size: 16px;
+            color: var(--primary);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid var(--accent);
+            padding-bottom: 5px;
+            margin-bottom: 12px;
+        }
+
+        p { margin-bottom: 10px; }
+
+        .summary { font-size: 14px; color: var(--text-main); }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 180px 1fr;
+            row-gap: 8px;
+            font-size: 13.5px;
+        }
+
+        .skills-grid strong { color: var(--primary); font-weight: 600; }
+
+        .item { margin-bottom: 16px; }
+        
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 4px;
+        }
+
+        .item-title { font-weight: 700; color: var(--primary); font-size: 15px; }
+        .item-subtitle { font-style: italic; color: var(--text-muted); font-size: 13.5px; }
+        .item-meta { color: var(--text-muted); font-size: 13.5px; }
+        
+        .item-link {
+            display: inline-block;
+            margin-bottom: 6px;
+            font-size: 13px;
+            color: var(--secondary);
+            text-decoration: none;
+        }
+        
+        .item-link:hover { text-decoration: underline; }
+
+        ul { padding-left: 20px; margin-top: 4px; }
+        li { margin-bottom: 4px; color: var(--text-main); }
+        
+        .print-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--secondary);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
+            transition: transform 0.2s;
+        }
+        
+        .print-btn:hover { transform: translateY(-2px); }
+
+    </style>
+</head>
+<body>
+
+    <button class="print-btn hide-print" onclick="window.print()">Save as PDF</button>
+
+    <div class="resume-container">
+        
+        <header>
+            <div class="header-content">
+                <img src="profile.jpg" alt="Rasel Ahmmed" class="profile-img">
+                <div class="header-left">
+                    <h1>RASEL AHMMED</h1>
+                    <h2>Full-Stack Software Engineer & AI Integration Specialist</h2>
+                </div>
+            </div>
+            <div class="header-right">
+                Pangsha, Rajbari, Dhaka<br>
+                +88 01846480877<br>
+                <a href="mailto:raselahmed152727@gmail.com">raselahmed152727@gmail.com</a><br>
+                <a href="https://portfolio.inkmind.tech" target="_blank">portfolio.inkmind.tech</a> | 
+                <a href="https://github.com/tricks-ter" target="_blank">github.com/tricks-ter</a>
+            </div>
+        </header>
+
+        <section class="section">
+            <h3 class="section-title">Professional Summary</h3>
+            <p class="summary">
+                Results-driven Software Engineer graduating in 2026 with extensive hands-on experience architecting production-ready AI systems and full-stack web applications. Founder and Lead Architect of InkMind Technologies, specializing in bridging complex backend infrastructure (FastAPI, Node.js) with dynamic, offline-capable frontends (React). Passionate about deploying Generative AI, Large Language Models (LLMs), and Computer Vision into scalable, real-world enterprise environments.
+            </p>
+        </section>
+
+        <section class="section">
+            <h3 class="section-title">Technical Skills</h3>
+            <div class="skills-grid">
+                <div><strong>Languages:</strong></div>
+                <div>Python, JavaScript, TypeScript, C++, Java, SQL</div>
+                
+                <div><strong>Frontend Frameworks:</strong></div>
+                <div>React.js, Next.js, Vite, Tailwind CSS, Framer Motion</div>
+                
+                <div><strong>Backend & APIs:</strong></div>
+                <div>Node.js, Express.js, FastAPI, Flask, Prisma ORM, RESTful APIs</div>
+                
+                <div><strong>Databases:</strong></div>
+                <div>PostgreSQL, MongoDB, SQLite (aiosqlite), Firebase, Supabase</div>
+                
+                <div><strong>AI & Machine Learning:</strong></div>
+                <div>Generative AI (Google Gemini, OpenAI), TensorFlow, PyTorch, OpenCV, Prompt Engineering</div>
+                
+                <div><strong>DevOps & Tools:</strong></div>
+                <div>Git, Docker, Linux, Vercel, Render, MikroTik RouterOS API</div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h3 class="section-title">Featured Projects & Professional Experience</h3>
+            
+            <div class="item">
+                <div class="item-header">
+                    <div>
+                        <span class="item-title">LoreWeaver (AI Narrative Engine)</span>
+                        <span class="item-subtitle"> | Lead Architect (InkMind)</span>
+                    </div>
+                    <span class="item-meta">React.js, FastAPI, PostgreSQL, Gemini LLM</span>
+                </div>
+                <a href="https://loreweaver.inkmind.tech" class="item-link" target="_blank">loreweaver.inkmind.tech</a>
+                <ul>
+                    <li>Architected a highly interactive RPG narrative engine, engineered from the ground up for seamless offline-online synchronization.</li>
+                    <li>Developed a custom AI "Dungeon Master" utilizing dynamically assembled prompt logic via Google Gemini LLMs to generate context-aware narrative branches based on player inventory and stats.</li>
+                    <li>Built a highly resilient Python/FastAPI backend with 15+ schema migrations to track intricate world states and character progression.</li>
+                    <li>Implemented an optimistic UI using React/Vite, allowing users to queue social interactions with zero perceived latency.</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <div>
+                        <span class="item-title">Enterprise ISP Billing System</span>
+                        <span class="item-subtitle"> | Full-Stack Developer</span>
+                    </div>
+                    <span class="item-meta">Node.js, Prisma, MikroTik API</span>
+                </div>
+                <a href="https://isp-billing-frontend-0f1m.onrender.com" class="item-link" target="_blank">isp-billing-frontend-0f1m.onrender.com</a>
+                <ul>
+                    <li>Developed a full-stack enterprise dashboard tailored for Internet Service Providers (ISPs) to automate customer billing cycles and inventory.</li>
+                    <li>Engineered deep API integration directly into MikroTik RouterOS hardware to provide real-time network diagnostics, automated bandwidth throttling, and customer disconnect logic.</li>
+                    <li>Managed secure backend ledgers and relational database queries using Node.js and Prisma ORM.</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <div>
+                        <span class="item-title">InkMind Enterprise Moderator Bot</span>
+                        <span class="item-subtitle"> | AI Chatbot Developer</span>
+                    </div>
+                    <span class="item-meta">Python, python-telegram-bot, Gemini AI</span>
+                </div>
+                <a href="https://github.com/tricks-ter/inkmind-moderator-bot" class="item-link" target="_blank">github.com/tricks-ter/inkmind-moderator-bot</a>
+                <ul>
+                    <li>Built a production-ready Telegram community moderation bot tailored for large enterprise ecosystems.</li>
+                    <li>Integrated an asynchronous SQLite database (aiosqlite) to manage a strict 3-strike penalty system with private admin audit logging.</li>
+                    <li>Utilized LLMs and static keyword filters to perform cost-optimized, real-time toxicity and spam filtering.</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <div>
+                        <span class="item-title">Skin Disease Diagnostics AI</span>
+                        <span class="item-subtitle"> | Machine Learning Engineer</span>
+                    </div>
+                    <span class="item-meta">PyTorch, OpenCV, CNNs, GenAI</span>
+                </div>
+                <a href="https://github.com/tricks-ter/skin-disease-ai" class="item-link" target="_blank">github.com/tricks-ter/skin-disease-ai</a>
+                <ul>
+                    <li>Developed a Convolutional Neural Network (CNN) achieving 94% accuracy in classifying 8 distinct skin diseases.</li>
+                    <li>Bridged the computer vision model with Generative AI to translate complex medical predictions into patient-friendly, human-readable explanations.</li>
+                </ul>
+            </div>
+            
+            <div class="item">
+                <div class="item-header">
+                    <div>
+                        <span class="item-title">Custom eCommerce ERP Solution</span>
+                        <span class="item-subtitle"> | MERN Stack Developer</span>
+                    </div>
+                    <span class="item-meta">MongoDB, Express.js, React, Node.js</span>
+                </div>
+                <ul>
+                    <li>Developed a lightweight Enterprise Resource Planning (ERP) application focused on Point of Sale (POS) and dynamic inventory management.</li>
+                    <li>Designed secure JWT-based user authentication and real-time transactional ledgers.</li>
+                </ul>
+            </div>
+
+        </section>
+
+        <section class="section">
+            <h3 class="section-title">Education</h3>
+            
+            <div class="item" style="margin-bottom: 8px;">
+                <div class="item-header">
+                    <span class="item-title">BSc in Computer Science & Engineering</span>
+                    <span class="item-meta">Expected: Dec 2026</span>
+                </div>
+                <div class="item-subtitle">American International University of Bangladesh (AIUB), Dhaka</div>
+            </div>
+
+            <div class="item" style="margin-bottom: 8px;">
+                <div class="item-header">
+                    <span class="item-title">Higher Secondary Certificate (HSC) – Science</span>
+                    <span class="item-meta">2020 | GPA: 4.42/5.00</span>
+                </div>
+                <div class="item-subtitle">Legend College, Savar, Dhaka</div>
+            </div>
+            
+            <div class="item" style="margin-bottom: 8px;">
+                <div class="item-header">
+                    <span class="item-title">Secondary School Certificate (SSC) – Science</span>
+                    <span class="item-meta">2018 | GPA: 4.28/5.00</span>
+                </div>
+                <div class="item-subtitle">Mohammad Ali Yeakub Ali School and College</div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h3 class="section-title">Certifications</h3>
+            <ul style="list-style-type: none; padding-left: 0;">
+                <li>• <strong>Machine Learning Specialization</strong> – Stanford University / DeepLearning.AI (Coursera)</li>
+                <li>• <strong>Deep Learning Specialization</strong> – DeepLearning.AI (Coursera)</li>
+                <li>• <strong>Python for Data Science</strong> – IBM (DataCamp)</li>
+            </ul>
+        </section>
+
+    </div>
+
+</body>
+</html>
