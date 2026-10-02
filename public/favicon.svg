@@ -1,0 +1,13 @@
+<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="inkmind-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#60A5FA" />
+      <stop offset="50%" stopColor="#818CF8" />
+      <stop offset="100%" stopColor="#C084FC" />
+    </linearGradient>
+  </defs>
+  <path d="M 50 25 C 20 10, 15 45, 30 55 C 30 70, 45 80, 50 90 C 55 80, 70 70, 70 55 C 85 45, 80 10, 50 25 Z" stroke="url(#inkmind-gradient)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="url(#inkmind-gradient)" fill-opacity="0.1"/>
+  <path d="M 50 90 L 38 65 Q 50 55 62 65 Z" stroke="url(#inkmind-gradient)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="url(#inkmind-gradient)" fill-opacity="0.3"/>
+  <line x1="50" y1="85" x2="50" y2="70" stroke="url(#inkmind-gradient)" stroke-width="4" stroke-linecap="round" />
+  <circle cx="50" cy="65" r="4" stroke="url(#inkmind-gradient)" stroke-width="4" fill="none" />
+</svg>
