@@ -62,7 +62,7 @@ export default function Hero() {
         </motion.div>
         
         <motion.h1 variants={itemVariants} className="text-5xl md:text-7xl font-bold tracking-tight mb-6">
-          Hi, I'm <span className="bg-gradient-to-r from-blue-400 to-indigo-500 bg-clip-text text-transparent">Tricks-ter</span>
+          Hi, I'm <span className="bg-gradient-to-r from-blue-400 to-indigo-500 bg-clip-text text-transparent">Rasel Ahmmed</span>
         </motion.h1>
         
         <motion.div variants={itemVariants} className="bg-surface/50 glass border border-white/10 p-6 rounded-2xl mb-10 max-w-3xl mx-auto text-left shadow-2xl">
