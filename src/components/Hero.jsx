@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Mail, Terminal, Database, Code2 } from 'lucide-react';
+import Logo from './Logo';
 
 const GithubIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -49,8 +50,12 @@ export default function Hero() {
         variants={containerVariants}
         initial="hidden"
         animate="visible"
-        className="z-10 max-w-4xl mx-auto"
+        className="z-10 max-w-4xl mx-auto flex flex-col items-center"
       >
+        <motion.div variants={itemVariants} className="mb-6">
+          <Logo className="w-24 h-24 drop-shadow-[0_0_15px_rgba(129,140,248,0.5)]" />
+        </motion.div>
+        
         <motion.div variants={itemVariants} className="mb-6 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm font-medium text-gray-300">
           <Terminal size={16} className="text-primary" />
           <span>Software Engineer & AI Architect</span>
