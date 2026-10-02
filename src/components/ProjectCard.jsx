@@ -4,12 +4,9 @@ import { ExternalLink, Github } from 'lucide-react';
 
 export default function ProjectCard({ project }) {
   return (
-    <motion.a
-      href={project.url}
-      target="_blank"
-      rel="noreferrer"
+    <motion.div
       whileHover={{ y: -8, scale: 1.01 }}
-      className={`glass rounded-2xl p-8 flex flex-col justify-between group relative overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-[0_0_30px_rgba(59,130,246,0.15)] hover:border-primary/50 ${project.featured ? 'md:col-span-2 bg-gradient-to-br from-surface to-surface/40' : 'bg-surface/50'}`}
+      className={`glass rounded-2xl p-8 flex flex-col justify-between group relative overflow-hidden transition-all duration-300 hover:shadow-[0_0_30px_rgba(59,130,246,0.15)] hover:border-primary/50 ${project.featured ? 'md:col-span-2 bg-gradient-to-br from-surface to-surface/40' : 'bg-surface/50'}`}
     >
       {/* Glow effect on hover */}
       <div className="absolute inset-0 bg-gradient-to-tr from-primary/0 via-primary/5 to-primary/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
@@ -19,8 +16,17 @@ export default function ProjectCard({ project }) {
           <h3 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400 group-hover:to-white transition-all">
             {project.title}
           </h3>
-          <div className="flex gap-2">
-            <ExternalLink className="text-textMuted group-hover:text-primary transition-colors" size={24} />
+          <div className="flex gap-3 z-20">
+            {project.github && (
+              <a href={project.github} target="_blank" rel="noreferrer" className="text-textMuted hover:text-white transition-colors" title="View Source">
+                <Github size={22} />
+              </a>
+            )}
+            {project.url && project.url !== project.github && (
+              <a href={project.url} target="_blank" rel="noreferrer" className="text-textMuted hover:text-primary transition-colors" title="Live Demo">
+                <ExternalLink size={24} />
+              </a>
+            )}
           </div>
         </div>
         <p className="text-gray-400 mb-8 leading-relaxed">
@@ -38,6 +44,6 @@ export default function ProjectCard({ project }) {
           </span>
         ))}
       </div>
-    </motion.a>
+    </motion.div>
   );
 }
