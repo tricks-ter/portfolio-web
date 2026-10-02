@@ -1,7 +1,7 @@
 export const projects = [
   {
     id: 1,
-    title: "InkMind — AI Narrative Engine",
+    title: "LoreWeaver — AI Narrative Engine",
     description: "An advanced, interactive narrative RPG system featuring a custom AI Dungeon Master, offline-sync social queues, and deep world state management.",
     tech: ["React", "FastAPI", "PostgreSQL", "Gemini LLM"],
     url: "https://inkmind.tech",
